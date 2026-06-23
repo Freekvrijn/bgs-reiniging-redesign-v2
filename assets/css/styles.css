@@ -40,6 +40,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html, body { overflow-x: hidden; max-width: 100%; }
 body {
   font-family: var(--font);
   color: var(--ink);
@@ -318,6 +319,7 @@ body.nav-open .nav-toggle span::after { transform: translateY(-7px) rotate(-45de
   .split, .detail, .detail--reverse { grid-template-columns: 1fr; }
   .split--reverse .split__media, .detail--reverse .detail__media { order: -1; }
   .stat-row { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 720px) {
